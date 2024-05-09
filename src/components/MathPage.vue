@@ -38,7 +38,7 @@ let score = 0
 // 分数的key
 const scoreKey = 'scorekey';
 // 总次数
-const maxTimes = 5
+const maxTimes = 100
 // 当前次数
 let playTimes = 0
 // 当前次数的key
