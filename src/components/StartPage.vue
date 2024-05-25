@@ -2,7 +2,7 @@
 import { defineEmits } from 'vue';
 const emit = defineEmits(['onChangeStatus']);
 const onStart = () => {
-    emit('onChangeStatus', 'math');
+    emit('onChangeStatus', 'balance');
 };
 
 </script>

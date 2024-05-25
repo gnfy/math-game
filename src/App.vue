@@ -1,8 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import StartPage from './components/StartPage.vue'
-import MathPage from './components/MathPage.vue'
-import SuccessPage from './components/SuccessPage.vue'
+import BalancePage from './components/BalancePage.vue'
 
 const pageStatus = ref('start')
 
@@ -14,8 +13,7 @@ function onChangeStatus(status) {
 
 <template>
   <StartPage @onChangeStatus="onChangeStatus" v-if="pageStatus === 'start'" />
-  <MathPage @onChangeStatus="onChangeStatus" v-else-if="pageStatus === 'math'" />
-  <SuccessPage @onChangeStatus="onChangeStatus" v-if="pageStatus === 'success'" />
+  <BalancePage v-else-if="pageStatus === 'balance'" />
 </template>
 
 <style scoped></style>
