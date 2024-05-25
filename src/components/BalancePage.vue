@@ -1,5 +1,5 @@
 <template>
-    <div class="title">找平衡</div>
+    <div class="title">给天平找平衡</div>
     <div class="balance">
         <div class="scale" :class="scaleClass">
             <div class="left">{{ current.firstNumber }} {{ current.operator }} {{ current.secondNumber }}</div>
